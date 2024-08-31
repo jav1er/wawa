@@ -1,0 +1,50 @@
+{
+  "name": "wawa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "next lint",
+    "json-server": "json-server --watch db.json -p 8000"
+  },
+
+  "engines": {
+    "node": "16.20.0 || 20.11.1"
+  },
+  
+  "dependencies": {
+    "@hookform/resolvers": "^2.8.8",
+    "@next/font": "13.1.1",
+    "@tanstack/query-sync-storage-persister": "^4.32.6",
+    "@tanstack/react-query": "^4.32.5",
+    "@tanstack/react-query-devtools": "^4.32.5",
+    "@tanstack/react-query-persist-client": "^4.32.6",
+    "@tanstack/react-table": "^8.10.7",
+    "@faker-js/faker": "^8.0.2",
+    "classnames": "^2.3.2",
+    "clipboardy": "^3.0.0",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "flowbite": "^2.2.0",
+    "flowbite-react": "^0.7.0",
+    "json-server": "^0.17.3",
+    "next": "13.1.1",
+    "node-fetch": "^3.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.31.1",
+    "request": "^2.88.2",
+    "sass": "^1.46.0",
+    "socket.io": "4.5.4",
+    "socket.io-client": "4.5.4",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  }
+}

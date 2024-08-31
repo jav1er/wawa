@@ -1,0 +1,132 @@
+.AdminPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1030px;
+  margin: 0px auto;
+
+  .container-Admin-Page {
+    width: 100%;
+    //max-width: 1500px;
+    background: rgb(203, 203, 203);
+    border: 1px dashed black;
+    margin-top: 30px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    .container_table {
+      grid-column: 1/3;
+    }
+
+    .form-create-post {
+      min-height: 168px;
+      border: 1px solid blueviolet;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-family: "OpenSans-Regular", sans-serif;
+      font-style: normal;
+    }
+
+    .perfil {
+      border: 1px solid black;
+    }
+
+    .content-posts {
+      grid-row-gap: 20px;
+      display: grid;
+    }
+
+    .post {
+      border: 1px dashed rgb(87, 62, 29);
+    }
+    .magin-auto {
+      margin: auto;
+    }
+
+    .button,
+    .disabled {
+      grid-column: 2 / -1;
+      display: inline-block;
+      padding: 14.5px 57.9px;
+      // margin-top: 0px;
+      // margin-left: auto;
+      border: 0;
+      border-radius: 0;
+      font-family: "OpenSans-Regular";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      //line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: white;
+      background-color: $buttom-b;
+      //transition: all 300ms ease;
+      border: 1px solid $buttom-b;
+      height: 55px;
+    }
+    .disabled {
+      background: #a7abaf;
+    }
+
+    .button:active {
+      background-color: #009cd9;
+    }
+
+    .container-Admin-Page-center-loader {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .container-Admin-Page-buttons {
+      display: flex;
+      justify-content: flex-end;
+      grid-column: 1 / 3;
+      column-gap: 40px;
+    }
+
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #24272a;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      //display: inline-block;
+      //box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container-Admin-Page {
+      grid-template-columns: repeat(1, 1fr);
+      .container-Admin-Page-buttons {
+        grid-column: 1/2;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+  }
+}

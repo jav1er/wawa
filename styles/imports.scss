@@ -1,0 +1,16 @@
+@import "./colors.scss";
+
+//components
+@import "../layout/Layout.scss";
+@import "../components/ContentMain/ContentMain.scss";
+@import "../components/LoginForm/LoginForm.scss";
+@import "../components/RegisterForm/RegisterForm.scss";
+@import "../components/CustomModal/CustomModal.scss";
+@import "../components/CreatePostForm/CreatePostForm.scss";
+@import "../components/UpdatePostForm/UpdatePostForm.scss";
+
+
+//pages
+@import "../pages/dashboard.scss";
+@import "../pages/admin_panel.scss";
+@import "../pages/property.scss";

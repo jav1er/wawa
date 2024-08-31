@@ -1,0 +1,94 @@
+.custom-modal {
+  position: fixed;
+  background: $dark-background;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .dialog {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: $third;
+    border-radius: 4px;
+    width: 600px;
+    height: auto;
+    padding: 14px !important;
+    padding-bottom: 38px !important;
+
+    .modal-header {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      .close {
+        position: relative;
+        cursor: pointer;
+        right: 5px;
+        top: 5px;
+        width: 13px;
+        height: 14px;
+        opacity: 0.3;
+      }
+      .close:hover {
+        opacity: 1;
+
+        transform: scale(1.01);
+      }
+      .close:before,
+      .close:after {
+        position: absolute;
+        left: 6px;
+        content: " ";
+        height: 13px;
+        width: 2px;
+        background: $grey;
+      }
+      .close:before {
+        transform: rotate(45deg);
+      }
+      .close:after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      /* align-items: flex-start; */
+      /* margin-left: 42px; */
+      /* margin-top: 17px; */
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      .modal-title {
+        color: $secondary;
+        font-family: "american-typewriter-bold";
+        font-size: 14px;
+      }
+
+      .group {
+        display: flex;
+        flex-direction: column;
+        height: 27px;
+        height: auto;
+        word-wrap: break-word;
+        padding-right: 40px;
+
+        li {
+          color: $primary;
+          font-size: 14px;
+          font-family: "american-typewriter";
+          margin-top: 10px;
+          text-align: justify !important;
+        }
+      }
+    }
+  }
+}
